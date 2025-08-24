@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thư viện ảnh đơn giản</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 cột trên màn hình rộng */
+      gap: 10px;
+    }
+    /* Tự co cột khi màn hình nhỏ */
+    @media (max-width: 900px) {
+      .gallery { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+    }
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 1 / 1;   /* thành ô vuông */
+      object-fit: cover;      /* cắt vừa khung, không méo */
+      border-radius: 8px;     /* bo góc nhẹ */
+    }
+  </style>
+</head>
+<body>
+  <h2>Thư viện ảnh</h2>
+
+  <div class="gallery">
+    <img src="./HinhAnh/p1.jpg" alt="Ảnh 1">
+    <img src="./HinhAnh/p2.jpg" alt="Ảnh 2">
+    <img src="./HinhAnh/p3.jpg" alt="Ảnh 3">
+    <img src="./HinhAnh/p4.jpg" alt="Ảnh 4">
+    <img src="./HinhAnh/p5.jpg" alt="Ảnh 5">
+    <img src="./HinhAnh/p6.jpg" alt="Ảnh 6">
+  </div>
+</body>
+</html>

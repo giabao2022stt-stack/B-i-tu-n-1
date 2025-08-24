@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đặt bàn</title>
+</head>
+<body>
+  <h2>Form Đặt bàn quán ăn</h2>
+  <form>
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="people">Số người:</label>
+    <input type="number" id="people" name="people" min="1" required><br><br>
+
+    <label for="datetime">Ngày & Giờ:</label>
+    <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+
+    <label for="request">Yêu cầu đặc biệt:</label>
+    <textarea id="request" name="request" rows="3"></textarea><br><br>
+
+    <button type="submit">Đặt bàn</button>
+  </form>
+</body>
+</html>
